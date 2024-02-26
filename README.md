@@ -117,29 +117,17 @@ We can see that whatever we enter in the terminal, the data can be seen on WireS
 <h2>Observe DHCP Traffic</h2>
 
 <p>
-<img width="719" alt="image" src="https://github.com/PradoJuanPablo/azure-network-protocols/assets/160810181/8f5cdcc5-213b-44a6-b542-49643bd88d09">
+<img width="720" alt="image" src="https://github.com/PradoJuanPablo/azure-network-protocols/assets/160810181/7ad1a03d-c7d4-4a06-9068-fe6f2450ba01">
+
 
 </p>
 <p>
-Next we're going to SSh into VM2 and see the traffic passing in Wireshark. To do that we enter in "ssh labuser@10.0.0.5" which is the command used to ssh into our machine with our credentials
+Now we're going to inspect DHCP Traffic. DHCP is a protocol that automatically assigns IP addresses to devices on the network. 
+
+On WireShark we see that a request made to the DHCP server (168.63.129.16) for a new IP address (ipconfig /renew). The DHCP server replies with a DHCP ACK packet and we got re-issued an IP address. 
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
 <h2>Observe DNS Traffic</h2>
 
