@@ -68,19 +68,35 @@ Now we are ready to capture traffic!
 <h2>Observe ICMP  Traffic</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="720" alt="image" src="https://github.com/PradoJuanPablo/azure-network-protocols/assets/160810181/1a728a55-8616-4797-a30c-4fa44965a7ff">
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Lets observe ICMP traffic from VM1 to VM2. To do this we open up WireShark > filter to only see ICMP traffic > opem Powershell and type "ping *VM2's Private IP* -t"
+Using "-t" we set a continous ping. Notice in WireShark we are getting requests and replys meaning a successful ping.
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1241" alt="image" src="https://github.com/PradoJuanPablo/azure-network-protocols/assets/160810181/aadba1a6-028a-46f1-9eb6-1360089cf66f">
+
+<img width="720" alt="image" src="https://github.com/PradoJuanPablo/azure-network-protocols/assets/160810181/c85e338a-c7b3-411d-a85f-8d60f17021f2">
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+Now we're going to set up a firewall rule for VM2 that's not going to allow ICMP traffic to pass thorugh. To do that we go back to the Azure Portal. 
+  
+1. Network Security Groups
+2. Select VM2-nsg
+3. Inbound Security Rules
+4. Add, Create the rule
+5. Save
+
+Go back to WireShark and see how the requests stop going through and it shows "no response found!" Our firewall prevents any ICMP traffic from passing through.
+
+To allow ICMP traffic to pass through again, head back to the DENY_ICMP_PING_FROM_ANYWHERE ruleand select allow. Which will allow ICMP requests to come in. 
 <br />
 
 <p>
