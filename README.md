@@ -23,6 +23,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>High-Level Steps</h2>
 
 - Create our Resources( RG, VMs, Install WireShark)
+- Observe ICMP Traffic
 - Observe SSH Traffic
 - Observe DHCP Traffic
 - Observe DNS Traffic
