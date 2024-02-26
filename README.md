@@ -48,18 +48,19 @@ To get started, we must first create our Resource Group(RG) and our Virtual Mach
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<img width="722" alt="image" src="https://github.com/PradoJuanPablo/azure-network-protocols/assets/160810181/655fa14a-3158-4aa9-a8c4-39a627e29759">
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next we need to install WireShark, to do that we log into our Windows machine (VM1). 
+
+1. Type "Download WireShark" into browser
+2. Select Windows x64 Installer
+3. Open the file
+4. Run everything by the default settings
+
+Now we are ready to capture traffic!
+
 </p>
 <br />
 
